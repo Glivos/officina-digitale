@@ -1,0 +1,30 @@
+# Responsabili di zona.
+#
+# Questo file dice a GitHub chi deve essere chiamato ad approvare quando una
+# proposta di modifica tocca certi file. Fa effetto solo quando si trova su main.
+#
+# Un team indicato qui deve essere visibile e avere almeno permesso Write sul
+# repository, altrimenti GitHub lo ignora in silenzio.
+
+# Regola di riserva: se nessuna riga piu' specifica corrisponde, vale questa.
+*                       @francescoferrettibusiness
+
+# Calcolo delle fatture: la parte che tocca i soldi.
+/src/fatture.js         @Glivos/prodotto
+/test/                  @Glivos/prodotto
+
+# Anagrafica clienti.
+/src/clienti.js         @Glivos/prodotto
+
+# Listino prezzi: lo decide il commerciale, non chi scrive codice.
+# Per ora e' assegnato alla direzione: il team commerciale ha solo Triage
+# e verrebbe ignorato.
+/listino.csv            @francescoferrettibusiness
+
+# Documenti aziendali.
+/docs/                  @francescoferrettibusiness
+/TEAM.md                @francescoferrettibusiness
+
+# Sicurezza e automazioni.
+/SECURITY.md            @francescoferrettibusiness
+/.github/workflows/     @francescoferrettibusiness
